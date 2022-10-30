@@ -1,2 +1,3 @@
-.marcoComponente{background-color: aqua;}
-button{background-color: orange; padding: 1em; margin-bottom: 10px;}
+.marcoComponente{display: flex; flex-flow: column wrap; align-content: center; background-color: aqua; }
+.centrado{display: flex; height: 300px; justify-content: center; align-items: center; background-color: blueviolet;}
+button{background-color: orange;}

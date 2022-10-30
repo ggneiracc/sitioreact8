@@ -1,8 +1,9 @@
 import React from 'react';
 import "./C08css.css";
-import xStylos from "./C08cssObj";
+import { estiloObj } from "./C08cssObj";
 
 const C08componenteCONcss = () => {
+    
     return (
         <div className='marcoComponente'>
             <h4>Componente 8. Con formas de definir estilos</h4>
@@ -14,10 +15,12 @@ const C08componenteCONcss = () => {
             <button>
                 Botón 2 con estilos en archivo.css (normal)
             </button>
-
-            <button style={xStylos.estilo1}>
-                Botón 3 con estilos en archivo.js (Definida como objeto)
-            </button>
+            
+            <div className='centrado'>
+                <button style={estiloObj.estilo1}> 
+                    Botón 3 con estilos en archivo.js (Definida como objeto)
+                </button>
+            </div>
         </div>
     );
 };
