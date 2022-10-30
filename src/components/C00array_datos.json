@@ -1,0 +1,14 @@
+{
+    "datos":[
+        { "Id":1, "Sexo":"F", "Nombres":"Carmen Rosa", "Apellidos":"Diaz Condori",    "Edad":29 },
+        { "Id":2, "Sexo":"M", "Nombres":"Juan Carlos", "Apellidos":"Rodriguez Lopez", "Edad":45 },
+        { "Id":3, "Sexo":"M", "Nombres":"Ernesto",     "Apellidos":"Coila Pariapaza", "Edad":35 },
+        { "Id":4, "Sexo":"M", "Nombres":"Richard",     "Apellidos":"Laime Tinojo",    "Edad":25 },
+        { "Id":5, "Sexo":"M", "Nombres":"Juan Carlos", "Apellidos":"Rodriguez Lopez", "Edad":45 },
+        { "Id":6, "Sexo":"F", "Nombres":"Maria Carmen", "Apellidos":"Panibra Laime",  "Edad":40 },
+        { "Id":7, "Sexo":"M", "Nombres":"Julio",       "Apellidos":"Soncco Merma", "Edad":37},
+        { "Id":8, "Sexo":"M", "Nombres":"Pedro",       "Apellidos":"Lovon Torres", "Edad":38},
+        { "Id":9, "Sexo":"F", "Nombres":"Ana Maria",   "Apellidos":"LLerena Diaz", "Edad":40},
+        {"Id":10, "Sexo":"M", "Nombres":"Samuel",      "Apellidos":"Torres Luque", "Edad":40}
+    ]
+}
