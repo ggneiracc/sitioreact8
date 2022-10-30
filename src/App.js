@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import C01componente from './components/C01componente';
+import C02estado from './components/C02estado';
+import C03dobleestado from './components/C03dobleestado';
+import C04variableProps from './components/C04variableProps';
+import C05operador from './components/C05operador';
+import C06matriz from './components/C06matriz';
+import MatrizConOperaciones from './components/C07matrizOperaciones';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React. App CRUD
-        </a>
-      </header>
+      <C01componente />
+      <C02estado />
+      <C03dobleestado />
+      <C04variableProps xVariable="Hola mundo"/>
+      <C05operador />
+      <C06matriz />
+      <MatrizConOperaciones />
     </div>
   );
 }
