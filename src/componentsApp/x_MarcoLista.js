@@ -55,13 +55,13 @@ const MarcoLista = () => {
     const [orden, setOrden] = useState(0);
     
     return (
-        <div style={{border: '2px dashed red', width:'300px', padding:"10px"}}>
+        <div style={{border: '2px dashed red', width:'350px', padding:"10px"}}>
             <h1>MarcoLista.js</h1>
             <MarcoForm {...{agregarOeditarTarea, idActual, datosYlectura}} /> 
             {
                 docsBd.map( (row) => 
                     <p key={row.id}>
-                        {orden} {row.url} --- 
+                        No. {orden} {row.url} --- 
                         <span onClick={() => eliminarDocumento(row.id) }>x</span>
                          - 
                         <span onClick={() => setIdActual(row.id) }>A</span>

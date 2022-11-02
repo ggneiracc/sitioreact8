@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import firebase, { db } from '../firebase';
 import { doc, getDoc, } from "firebase/firestore";
-import { async } from '@firebase/util';
 
 const MarcoForm = (props) => {
     ////////// VALORES INICIALES del FORM. //////////////////////////////////
@@ -10,13 +9,13 @@ const MarcoForm = (props) => {
 
     ////////// MANEJA (submit) //////////////////////////////////////////////
     const manejarEnvio = (e) => {
-        e.preventDefault(); //?             //Cancela envio para mostrar lo de mas
+        e.preventDefault();                     //Previene comportamient x defecto
         if(!validarURL(valores.url)){
             alert("URL no es válido...");
             return false;
         }else{
             props.agregarOeditarTarea(valores); //llama a fn pasando valores
-            setValores({...valoresIniciales});  //Pasa valores iniciales
+            setValores(valoresIniciales);       //Pasa valores iniciales
             //console.log(valores);
         }
     };
@@ -35,7 +34,7 @@ const MarcoForm = (props) => {
     useEffect(() => {
         if(props.idActual===''){
             ////////// DEJA VACIO el form //////////////////////////////////
-            setValores({...valoresIniciales});       //Si idActual esta vacio
+            setValores(valoresIniciales);        //Si idActual esta vacio
         }else{
             const obtenerDatosPorId = async () => {
                 ////////// OBTENER REGISTRO por idActual ///////////////////
@@ -55,7 +54,7 @@ const MarcoForm = (props) => {
     //console.log("ver", valores);
 
     return (
-        <div style={{background:"orange", padding:"10px", textAlign:"center"}}>
+        <div style={{background:"violet", padding:"10px", textAlign:"center"}}>
             <form onSubmit={manejarEnvio}>
                 <h1>MarcoForm.js</h1>
                 <input type='text' name='url' placeholder='URL de sitio' 
@@ -73,7 +72,7 @@ const MarcoForm = (props) => {
                     value={valores.descripcion }
                 ></textarea><br/>
 
-                <button type='submit' onClick={props.datosYlectura}> 
+                <button> 
                     {props.idActual===""? "Guardar": "Actualizar"} 
                 </button>
             </form>
